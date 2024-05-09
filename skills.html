@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>skills</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <header>
+        <h3>PORTFOLIO</h3>
+        <ul style="list-style-type: none;">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="#c">CONTACT</a></li>
+            <li><a href="skills.html">SKILLS</a></li>
+        </ul>
+    </header>
+    <br>
+    <br>
+    <h3 style="text-align:center ;">MY SKILLS</h3>
+
+    <div class="containerA">
+        <div class="box_1">
+            <p style="font-size:120%;">PROGRAMMING LANGUAGES</p>
+            <br>
+            <i class="fa fa-code far"></i>
+        </div>
+        <div class="box_2">
+            <div class="box_2_1">
+                <div class="box_2_1_A">
+                    <div class="box_2_1_B">
+                        <div class="box_2_1_AA">
+                            <h4>HTML</h4>
+                            <br>
+                            <div class="loader_container">
+                                <div class="loader" style="background-color: slateblue;"></div>
+                            </div>
+                        </div>
+                        <div class="box_2_1_AAA">
+                            <p> <span id="l1">0</span>%</p>
+                        </div>
+                    </div>
+                    <div class="box_2_1_B">
+                        <div class="box_2_1_AA">
+                            <h4>CSS</h4>
+                            <br>
+                            <div class="loader_container">
+                                <div class="loader" style="background-color: yellowgreen;"></div>
+                            </div>
+                        </div>
+                        <div class="box_2_1_AAA">
+                            <p> <span id="l2">0</span>%</p>
+                        </div>
+                    </div>
+                    <div class="box_2_1_B">
+                        <div class="box_2_1_AA">
+                            <h4>JAVASCRIPT</h4>
+                            <br>
+                            <div class="loader_container">
+                                <div class="loader" style="background-color: dodgerblue;"></div>
+                            </div>
+                        </div>
+                        <div class="box_2_1_AAA">
+                            <p> <span id="l3">0</span>%</p>
+                        </div>
+                    </div>
+                    <div class="box_2_1_B">
+                        <div class="box_2_1_AA">
+                            <h4>PYTHON</h4>
+                            <br>
+                            <div class="loader_container">
+                                <div class="loader" style="background-color: teal;"></div>
+                            </div>
+                        </div>
+                        <div class="box_2_1_AAA">
+                            <p> <span id="l4">0</span>%</p>
+                        </div>
+                    </div>
+                    <div class="box_2_1_B">
+                        <div class="box_2_1_AA">
+                            <h4>PHP</h4>
+                            <br>
+                            <div class="loader_container">
+                                <div class="loader" style="background-color: rgb(196, 32, 73);"></div>
+                            </div>
+                        </div>
+                        <div class="box_2_1_AAA">
+                            <p> <span id="l5">0</span>%</p>
+                        </div>
+                    </div>
+                    <div class="box_2_1_B">
+                        <div class="box_2_1_AA">
+                            <h4>JAVA</h4>
+                            <br>
+                            <div class="loader_container">
+                                <div class="loader" style="background-color: rgb(211, 109, 26);"></div>
+                            </div>
+                        </div>
+                        <div class="box_2_1_AAA">
+                            <p> <span id="l6">0</span>%</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="box_2_1_A">
+              
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="containerA">
+        <div class="box_1">
+            <p style="font-size:120%;">FRONT-END DEVELOPMENT</p>
+        </div>
+        <div class="box_2"></div>
+    </div>
+
+    <script>
+        const html_loader = document.getElementsByClassName('loader')[0];
+        const l1 = document.getElementById('l1');
+        const l1_value = 88;
+
+        const html_loader2 = document.getElementsByClassName('loader')[1];
+        const l2 = document.getElementById('l2');
+        const l2_value = 69;
+
+        const html_loader3 = document.getElementsByClassName('loader')[2];
+        const l3 = document.getElementById('l3');
+        const l3_value = 55;
+
+        const html_loader4 = document.getElementsByClassName('loader')[3];
+        const l4 = document.getElementById('l4');
+        const l4_value = 72;
+
+        const html_loader5 = document.getElementsByClassName('loader')[4];
+        const l5 = document.getElementById('l5');
+        const l5_value = 89;
+
+        const html_loader6 = document.getElementsByClassName('loader')[5];
+        const l6 = document.getElementById('l6');
+        const l6_value = 49;
+
+
+        function counter_up(value, place, loader) {
+            let counter = 0;
+            let intv = setInterval(function () {
+                place.innerHTML = counter++;
+                loader.style.width = counter + '%';
+                if (counter == value + 1) {
+                    clearInterval(intv)
+                }
+            },value);
+        }
+
+        counter_up(l1_value, l1, html_loader);
+        counter_up(l2_value, l2, html_loader2);
+        counter_up(l3_value, l3, html_loader3);
+        counter_up(l4_value, l4, html_loader4);
+        counter_up(l5_value, l5, html_loader5);
+        counter_up(l6_value, l6, html_loader6);
+    </script>
+</body>
+
+</html>

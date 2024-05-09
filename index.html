@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>my portfolio | web developer</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h3>PORTFOLIO</h3>
+        <ul style="list-style-type: none;">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="#c">CONTACT</a></li>
+            <li><a href="skills.html">SKILLS</a></li>
+        </ul>
+    </header>
+    <br>
+    <br>
+    <h4 style="text-align: center;">WELCOME TO MY<span> PORTIFOLIO </span></h4>
+    <br>
+    <br>
+    <main>
+        <div class="container_1">
+            <img src="profile_pic.jpg" alt="my profile pic" width="200" id="pic">
+            <br>
+            <p>
+                Hi, My name is Timothy phiri <br> and i am a profesional web designer, capable of deploying affordable
+                website that highly runked by the search engines.
+            </p>
+
+        </div>
+        <div class="pro">
+            <p style="text-align: center;">FEATURED PROJECTS</p>
+            <br>
+            <div class="slideshow-container">
+                <div class="slideshow-images">
+
+                </div>
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+
+        </div>
+        
+    </main>
+    <aside>
+        <h2 style="text-align: center;">MY SERVICES</h2>
+        <br>
+        <div class="container_2_1">
+            <div class="container_2">
+                <p style="text-align: center;">WEB DESIGN</p>
+                <br>
+                <p>I specialize in creating visually appealing and user-friendly websites that align with your brand
+                    identity and business goals. From concept to execution, I carefully craft every element of your
+                    website to deliver an exceptional user experience.</p>
+                <br>
+            </div>
+            <br>
+            <div class="container_2">
+                <P style="text-align: center;">WEB MAINTAINANCE</P>
+                <br>
+                <p>Keeping your website up-to-date and running smoothly is crucial for its success. With my web
+                    maintenance services, I offer ongoing support and updates to ensure your website remains secure,
+                    functional, and relevant.</p>
+
+            </div>
+            <br>
+            <div class="container_2" id="s">
+                <P style="text-align: center;">WEB HOSTING</P>
+                <br>
+                <p>Ensure your website is accessible to visitors around the clock with reliable web hosting services. I
+                    provide affordable hosting solutions that offer high performance, security, and scalability.</p>
+
+            </div>
+        </div>
+        <div class="view_more_2">
+            <p class="view_more"> <a href="services.php">VIEW MORE</a> </p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <h2 style="text-align: center;">CONTACT ME</h2>
+        <br>
+    </aside>
+    <br>
+    <div class="foot">
+        <div class="foot3">
+    
+            <div class="box1">
+                <br>
+                <br>
+                <i class="fa fa-phone fa2"></i>
+                <p>PHONE NUMBERS </p>
+                <br>
+                <P>0992685747</P>
+                <P>0883172877</P>
+
+            </div>
+            <div class="box1">
+                <br>
+                <i class="fa fa-envelope fa2"></i>
+                <p>EMAIL</p>
+                <br>
+                <P id="c">timophir40@gmail.com</P>
+            </div>
+            <div class="box1">
+                <p>LOCATION MAP</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7743.1663033474!2d33.782800000000016!3d-13.983400000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smw!4v1685371427181!5m2!1sen!2smw"
+                    width="" height="" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="box1">
+                <br>
+                <i class="fa fa-globe fa2"></i>
+                <p>SOCIAL MEDIA LINKS</p>
+                <br>
+                <br>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-whatsapp"></i>
+                <i class="fa fa-telegram"></i>
+            </div>
+
+        </div>
+        <div class="foot2">
+
+            <form action="mysite.php" method="POST">
+                <p style="text-align: center; color: orangered;">CONTACTFORM</p>
+                <br>
+                <br>
+                <label for="name">Name</label> <br>
+                <input type="text" name="" id=""> <br>
+                <label for="email">Email</label> <br>
+                <input type="email" name="" id=""> <br>
+                <label for="number">Phone Number</label> <br>
+                <input type="number"> <br>
+                <label for="">Write message</label> <br>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <input type="submit" name="" id="" value="SUBMIT">
+            </form>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <p style="text-align: center;">@timothyphiri 2023 | All rights reserved</p>
+<br>
+
+    <script>
+        var slideIndex = 0;
+
+        function showSlides() {
+            var slides = document.getElementsByClassName("slideshow-images")[0].getElementsByTagName("img");
+
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slideIndex++;
+
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+
+            setTimeout(showSlides, 2000);
+        }
+
+        function changeSlide(n) {
+            slideIndex += n;
+            showSlides();
+        }
+
+        var images = ["img1.jpg", "img2.jpg", "img3.jpg"];
+
+        for (var i = 0; i < images.length; i++) {
+            var img = document.createElement("img");
+            img.src = images[i];
+            document.getElementsByClassName("slideshow-images")[0].appendChild(img);
+        }
+        showSlides();
+
+    </script>
+</body>
+
+</html>
